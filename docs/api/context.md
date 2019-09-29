@@ -172,10 +172,6 @@ Koa uses [http-assert](https://github.com/jshttp/http-assert) for assertions.
   - `ctx.ips`
   - `ctx.subdomains`
   - `ctx.is()`
-  - `ctx.accepts()`
-  - `ctx.acceptsEncodings()`
-  - `ctx.acceptsCharsets()`
-  - `ctx.acceptsLanguages()`
   - `ctx.get()`
 
 ## Response aliases

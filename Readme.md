@@ -103,17 +103,6 @@ Koa's `Request` object provides helpful methods for working with
 http requests which delegate to an [IncomingMessage](https://nodejs.org/api/http.html#http_class_http_incomingmessage)
 from the node `http` module.
 
-Here is an example of checking that a requesting client supports xml.
-
-```js
-app.use(async (ctx, next) => {
-  ctx.assert(ctx.request.accepts('xml'), 406);
-  // equivalent to:
-  // if (!ctx.request.accepts('xml')) ctx.throw(406);
-  await next();
-});
-```
-
 Koa provides a `Response` object as the `response` property of the `Context`.  
 Koa's `Response` object provides helpful methods for working with
 http responses which delegate to a [ServerResponse](https://nodejs.org/api/http.html#http_class_http_serverresponse)
@@ -136,8 +125,7 @@ app.use(async (ctx, next) => {
 ```
 
 The `Context` object also provides shortcuts for methods on its `request` and `response`.  In the prior
-examples,  `ctx.type` can be used instead of `ctx.response.type` and `ctx.accepts` can be used
-instead of `ctx.request.accepts`.
+examples,  `ctx.type` can be used instead of `ctx.response.type`.
 
 For more information on `Request`, `Response` and `Context`, see the [Request API Reference](docs/api/request.md),
 [Response API Reference](docs/api/response.md) and [Context API Reference](docs/api/context.md).
