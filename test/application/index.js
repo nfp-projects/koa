@@ -66,12 +66,6 @@ describe('app', () => {
     assert.strictEqual(app.proxy, proxy);
   });
 
-  it('should set signed cookie keys from the constructor', () => {
-    const keys = ['customkey'];
-    const app = new Koa({ keys });
-    assert.strictEqual(app.keys, keys);
-  });
-
   it('should set subdomainOffset from the constructor', () => {
     const subdomainOffset = 3;
     const app = new Koa({ subdomainOffset });

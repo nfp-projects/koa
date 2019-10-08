@@ -112,7 +112,6 @@ app.listen(3000);
   the following are supported:
 
   - `app.env` defaulting to the __NODE_ENV__ or "development"
-  - `app.keys` array of signed cookie keys
   - `app.proxy` when true proxy header fields will be trusted
   - `app.subdomainOffset` offset of `.subdomains` to ignore [2]
 
@@ -175,26 +174,6 @@ https.createServer(app.callback()).listen(3001);
 
   Add the given middleware function to this application. See [Middleware](https://github.com/koajs/koa/wiki#middleware) for
   more information.
-
-## app.keys=
-
- Set signed cookie keys.
-
- These are passed to [KeyGrip](https://github.com/crypto-utils/keygrip),
- however you may also pass your own `KeyGrip` instance. For
- example the following are acceptable:
-
-```js
-app.keys = ['im a newer secret', 'i like turtle'];
-app.keys = new KeyGrip(['im a newer secret', 'i like turtle'], 'sha256');
-```
-
-  These keys may be rotated and are used when signing cookies
-  with the `{ signed: true }` option:
-
-```js
-ctx.cookies.set('name', 'tobi', { signed: true });
-```
 
 ## app.context
 

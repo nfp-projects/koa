@@ -22,10 +22,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "content-disposition": "jharrilim/content-disposition#572383f
-",
-    "cookies": "~0.7.1",
-    "debug": "~3.1.0",
+    "content-disposition": "jharrilim/content-disposition#572383f",
+    "debug-ms": "~4.1.2",
     "delegates": "^1.0.0",
     "depd": "^1.1.2",
     "destroy": "^1.0.4",

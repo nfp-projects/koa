@@ -209,7 +209,7 @@ app.use(async function (ctx, next) {
 
 ## Debugging Koa
 
-  Koa along with many of the libraries it's built with support the __DEBUG__ environment variable from [debug](https://github.com/visionmedia/debug) which provides simple conditional logging.
+  Koa along with many of the libraries it's built with support the __DEBUG__ environment variable from [debug](https://github.com/nfp-projects/debug-ms) which provides simple conditional logging.
 
   For example
   to see all Koa-specific debugging information just pass `DEBUG=koa*` and upon boot you'll see the list of middleware used, among other things.
