@@ -32,21 +32,6 @@ describe('ctx.throw(err)', () => {
   });
 });
 
-describe('ctx.throw(err, status)', () => {
-  it('should throw the error and set .status', () => {
-    const ctx = context();
-    const error = new Error('test');
-
-    try {
-      ctx.throw(error, 422);
-    } catch (err) {
-      assert.equal(err.status, 422);
-      assert.equal(err.message, 'test');
-      assert.equal(err.expose, true);
-    }
-  });
-});
-
 describe('ctx.throw(status, err)', () => {
   it('should throw the error and set .status', () => {
     const ctx = context();
@@ -57,20 +42,6 @@ describe('ctx.throw(status, err)', () => {
     } catch (err) {
       assert.equal(err.status, 422);
       assert.equal(err.message, 'test');
-      assert.equal(err.expose, true);
-    }
-  });
-});
-
-describe('ctx.throw(msg, status)', () => {
-  it('should throw an error', () => {
-    const ctx = context();
-
-    try {
-      ctx.throw('name required', 400);
-    } catch (err) {
-      assert.equal(err.message, 'name required');
-      assert.equal(err.status, 400);
       assert.equal(err.expose, true);
     }
   });

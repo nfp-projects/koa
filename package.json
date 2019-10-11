@@ -30,12 +30,11 @@
     "escape-html": "^1.0.3",
     "fresh": "~0.5.2",
     "http-assert": "^1.3.0",
-    "http-errors": "^1.6.3",
+    "http-errors-lite": "^2.0.2",
     "koa-compose": "^4.1.0",
     "koa-is-json": "^1.0.0",
     "on-finished": "^2.3.0",
     "parseurl": "^1.3.2",
-    "statuses": "^1.5.0",
     "type-is": "^1.6.16",
     "vary": "^1.1.2"
   },

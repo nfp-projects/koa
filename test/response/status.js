@@ -3,7 +3,6 @@
 
 const response = require('../helpers/context').response;
 const request = require('supertest');
-const statuses = require('statuses');
 const assert = require('assert');
 const Koa = require('../..');
 
@@ -26,20 +25,6 @@ describe('res.status=', () => {
         assert.throws(() => {
           response().status = 99;
         }, /invalid status code: 99/);
-      });
-    });
-
-    describe('and custom status', () => {
-      beforeEach(() => statuses['700'] = 'custom status');
-
-      it('should set the status', () => {
-        const res = response();
-        res.status = 700;
-        assert.equal(res.status, 700);
-      });
-
-      it('should not throw', () => {
-        response().status = 700;
       });
     });
 
