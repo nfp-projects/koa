@@ -20,13 +20,13 @@
 Koa requires __node v7.6.0__ or higher for ES2015 and async function support.
 
 ```
-$ npm install koa
+$ npm install koa-lite
 ```
 
 ## Hello Koa
 
 ```js
-const Koa = require('koa');
+const Koa = require('koa-lite');
 const app = new Koa();
 
 // response

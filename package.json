@@ -1,7 +1,7 @@
 {
-  "name": "koa",
+  "name": "koa-lite",
   "version": "2.8.2",
-  "description": "Koa web app framework",
+  "description": "Lite version of the Koa web app framework",
   "main": "lib/application.js",
   "scripts": {
     "test": "egg-bin test test",
