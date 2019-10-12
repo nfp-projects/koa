@@ -1,6 +1,10 @@
 ## Koa-lite
 
   This is a tiny (improved) fork of [Koa](https://github.com/koajs/koa) that is about 50% smaller in disc space and uses a lot less dependancies, a total of 8 packages compared to Koa's 42 package installation. It also uses some improved versions to some of the previous dependencies. Overall the whole installation can be expected to go from 807KB to less than 394KB.
+  
+ #### Breaking change:
+ 
+One of the core mechanic was removed from the core as it should be found in a middleware instead (in my opinion) and that would be ctx.cookies() as I never found myself using cookies ever in all my projects.
 
 <img src="/docs/logo.png" alt="Koa middleware framework for nodejs"/>
 
