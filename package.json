@@ -25,8 +25,7 @@
     "content-disposition": "jharrilim/content-disposition#572383f",
     "debug-ms": "~4.1.2",
     "fresh": "~0.5.2",
-    "http-errors-lite": "^2.0.2",
-    "type-is": "^1.6.16"
+    "http-errors-lite": "^2.0.2"
   },
   "devDependencies": {
     "egg-bin": "^4.13.0",

@@ -32,8 +32,7 @@ describe('app', () => {
       ctx.socket.writable = false;
       ctx.status = 204;
       // throw if .writeHead or .end is called
-      ctx.res.writeHead =
-      ctx.res.end = () => {
+      ctx.res.writeHead = ctx.res.end = () => {
         throw new Error('response sent');
       };
     });
