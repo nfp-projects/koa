@@ -24,17 +24,10 @@
   "dependencies": {
     "content-disposition": "jharrilim/content-disposition#572383f",
     "debug-ms": "~4.1.2",
-    "destroy": "^1.0.4",
-    "encodeurl": "^1.0.2",
-    "error-inject": "^1.0.0",
-    "escape-html": "^1.0.3",
     "fresh": "~0.5.2",
     "http-errors-lite": "^2.0.2",
     "koa-compose": "^4.1.0",
-    "koa-is-json": "^1.0.0",
-    "on-finished": "^2.3.0",
-    "type-is": "^1.6.16",
-    "vary": "^1.1.2"
+    "type-is": "^1.6.16"
   },
   "devDependencies": {
     "egg-bin": "^4.13.0",

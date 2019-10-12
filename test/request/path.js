@@ -3,7 +3,6 @@
 
 const assert = require('assert');
 const context = require('../helpers/context');
-const parseurl = require('parseurl');
 
 describe('ctx.path', () => {
   it('should return the pathname', () => {
@@ -29,12 +28,5 @@ describe('ctx.path=', () => {
     assert.equal(ctx.url, '/logout');
     assert.equal(ctx.originalUrl, '/login');
     assert.equal(ctx.request.originalUrl, '/login');
-  });
-
-  it('should not affect parseurl', () => {
-    const ctx = context({ url: '/login?foo=bar' });
-    ctx.path = '/login';
-    const url = parseurl(ctx.req);
-    assert.equal(url.path, '/login?foo=bar');
   });
 });
