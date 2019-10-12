@@ -1,1 +1,3 @@
 extends: koa
+rules:
+  operator-linebreak: [error, before]
