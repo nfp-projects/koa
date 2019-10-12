@@ -1,6 +1,6 @@
 ## Koa-lite
 
-  This is a tiny (improved) fork of [Koa](https://github.com/koajs/koa) that is about 50% smaller in disc space and uses a lot less dependancies, a total of 8 packages compared to Koa's 42 package installation. It also uses some improved versions to some of the previous dependencies. Overall the whole installation can be expected to go from 807KB to less than 425KB.
+  This is a tiny (improved) fork of [Koa](https://github.com/koajs/koa) that is about 50% smaller in disc space and uses a lot less dependancies, a total of 8 packages compared to Koa's 42 package installation. It also uses some improved versions to some of the previous dependencies. Overall the whole installation can be expected to go from 807KB to less than 394KB.
 
 <img src="/docs/logo.png" alt="Koa middleware framework for nodejs"/>
 
