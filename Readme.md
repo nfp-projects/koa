@@ -1,12 +1,15 @@
+## Koa-lite
+
+  This is a tiny (improved) fork of [Koa](https://github.com/koajs/koa) that is about 50% smaller in disc space and uses a lot less dependancies, a total of 8 packages compared to Koa's 42 package installation. It also uses some improved versions to some of the previous dependencies. Overall the whole installation can be expected to go from 807KB to less than 425KB.
+
 <img src="/docs/logo.png" alt="Koa middleware framework for nodejs"/>
 
   [![gitter][gitter-image]][gitter-url]
   [![NPM version][npm-image]][npm-url]
   [![build status][travis-image]][travis-url]
-  [![Test coverage][coveralls-image]][coveralls-url]
-  [![OpenCollective Backers][backers-image]](#backers)
-  [![OpenCollective Sponsors][sponsors-image]](#sponsors)
   [![PR's Welcome][pr-welcoming-image]][pr-welcoming-url]
+
+## What is Koa
 
   Expressive HTTP middleware framework for node.js to make web applications and APIs more enjoyable to write. Koa's middleware stack flows in a stack-like manner, allowing you to perform actions downstream then filter and manipulate the response upstream.
 
@@ -79,15 +82,6 @@ app.use((ctx, next) => {
 });
 ```
 
-### Koa v1.x Middleware Signature
-
-The middleware signature changed between v1.x and v2.x.  The older signature is deprecated.
-
-**Old signature middleware support will be removed in v3**
-
-Please see the [Migration Guide](docs/migration.md) for more information on upgrading from v1.x and
-using v1.x middleware with v2.x.
-
 ## Context, Request and Response
 
 Each middleware receives a Koa `Context` object that encapsulates an incoming
@@ -148,40 +142,6 @@ Learn more about the application object in the [Application API Reference](docs/
  - [FAQ](docs/faq.md)
  - [API documentation](docs/api/index.md)
 
-## Babel setup
-
-If you're not using `node v7.6+`, we recommend setting up `babel` with [`@babel/preset-env`](https://babeljs.io/docs/en/next/babel-preset-env):
-
-```bash
-$ npm install @babel/register @babel/preset-env @babel/cli --save-dev
-```
-
-In development, you'll want to use [`@babel/register`](https://babeljs.io/docs/en/next/babel-register):
-
-```bash
-node --require @babel/register <your-entry-file>
-```
-
-In production, you'll want to build your files with [`@babel/cli`](https://babeljs.io/docs/en/babel-cli). Suppose you are compiling a folder `src` and you wanted the output to go to a new folder `dist` with non-javascript files copied:
-
-```bash
-babel src --out-dir dist --copy-files
-```
-
-And have your `.babelrc` setup:
-
-```json
-{
-  "presets": [
-    ["@babel/preset-env", {
-      "targets": {
-        "node": true
-      }
-    }]
-  ]
-}
-```
-
 ## Troubleshooting
 
 Check the [Troubleshooting Guide](docs/troubleshooting.md) or [Debugging Koa](docs/guide.md#debugging-koa) in
@@ -216,97 +176,14 @@ See [AUTHORS](AUTHORS).
  - [中文文档 v2.x](https://github.com/demopark/koa-docs-Zh-CN)
  - __[#koajs]__ on freenode
 
-## Job Board
-
-Looking for a career upgrade?
-
-<a href="https://astro.netlify.com/automattic"><img src="https://astro.netlify.com/static/automattic.png"></a>
-<a href="https://astro.netlify.com/segment"><img src="https://astro.netlify.com/static/segment.png"></a>
-<a href="https://astro.netlify.com/auth0"><img src="https://astro.netlify.com/static/auth0.png"/></a>
-
-## Backers
-
-Support us with a monthly donation and help us continue our activities.
-
-<a href="https://opencollective.com/koajs/backer/0/website" target="_blank"><img src="https://opencollective.com/koajs/backer/0/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/1/website" target="_blank"><img src="https://opencollective.com/koajs/backer/1/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/2/website" target="_blank"><img src="https://opencollective.com/koajs/backer/2/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/3/website" target="_blank"><img src="https://opencollective.com/koajs/backer/3/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/4/website" target="_blank"><img src="https://opencollective.com/koajs/backer/4/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/5/website" target="_blank"><img src="https://opencollective.com/koajs/backer/5/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/6/website" target="_blank"><img src="https://opencollective.com/koajs/backer/6/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/7/website" target="_blank"><img src="https://opencollective.com/koajs/backer/7/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/8/website" target="_blank"><img src="https://opencollective.com/koajs/backer/8/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/9/website" target="_blank"><img src="https://opencollective.com/koajs/backer/9/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/10/website" target="_blank"><img src="https://opencollective.com/koajs/backer/10/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/11/website" target="_blank"><img src="https://opencollective.com/koajs/backer/11/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/12/website" target="_blank"><img src="https://opencollective.com/koajs/backer/12/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/13/website" target="_blank"><img src="https://opencollective.com/koajs/backer/13/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/14/website" target="_blank"><img src="https://opencollective.com/koajs/backer/14/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/15/website" target="_blank"><img src="https://opencollective.com/koajs/backer/15/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/16/website" target="_blank"><img src="https://opencollective.com/koajs/backer/16/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/17/website" target="_blank"><img src="https://opencollective.com/koajs/backer/17/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/18/website" target="_blank"><img src="https://opencollective.com/koajs/backer/18/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/19/website" target="_blank"><img src="https://opencollective.com/koajs/backer/19/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/20/website" target="_blank"><img src="https://opencollective.com/koajs/backer/20/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/21/website" target="_blank"><img src="https://opencollective.com/koajs/backer/21/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/22/website" target="_blank"><img src="https://opencollective.com/koajs/backer/22/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/23/website" target="_blank"><img src="https://opencollective.com/koajs/backer/23/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/24/website" target="_blank"><img src="https://opencollective.com/koajs/backer/24/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/25/website" target="_blank"><img src="https://opencollective.com/koajs/backer/25/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/26/website" target="_blank"><img src="https://opencollective.com/koajs/backer/26/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/27/website" target="_blank"><img src="https://opencollective.com/koajs/backer/27/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/28/website" target="_blank"><img src="https://opencollective.com/koajs/backer/28/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/backer/29/website" target="_blank"><img src="https://opencollective.com/koajs/backer/29/avatar.svg"></a>
-
-
-## Sponsors
-
-Become a sponsor and get your logo on our README on Github with a link to your site.
-
-<a href="https://opencollective.com/koajs/sponsor/0/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/1/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/2/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/3/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/4/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/4/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/5/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/5/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/6/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/6/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/7/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/7/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/8/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/8/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/9/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/9/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/10/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/10/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/11/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/11/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/12/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/12/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/13/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/13/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/14/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/14/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/15/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/15/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/16/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/16/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/17/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/17/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/18/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/18/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/19/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/19/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/20/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/20/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/21/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/21/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/22/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/22/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/23/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/23/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/24/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/24/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/25/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/25/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/26/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/26/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/27/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/27/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/28/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/28/avatar.svg"></a>
-<a href="https://opencollective.com/koajs/sponsor/29/website" target="_blank"><img src="https://opencollective.com/koajs/sponsor/29/avatar.svg"></a>
-
 # License
 
   [MIT](https://github.com/koajs/koa/blob/master/LICENSE)
 
-[npm-image]: https://img.shields.io/npm/v/koa.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/koa
-[travis-image]: https://img.shields.io/travis/koajs/koa/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/koajs/koa
-[coveralls-image]: https://img.shields.io/codecov/c/github/koajs/koa.svg?style=flat-square
-[coveralls-url]: https://codecov.io/github/koajs/koa?branch=master
-[backers-image]: https://opencollective.com/koajs/backers/badge.svg?style=flat-square
-[sponsors-image]: https://opencollective.com/koajs/sponsors/badge.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/koa-lite.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/koa-lite
+[travis-image]: https://img.shields.io/travis/nfp-projects/koa-lite/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/nfp-projects/koa-lite
 [gitter-image]: https://img.shields.io/gitter/room/koajs/koa.svg?style=flat-square
 [gitter-url]: https://gitter.im/koajs/koa?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 [#koajs]: https://webchat.freenode.net/?channels=#koajs
