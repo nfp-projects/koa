@@ -1,4 +1,4 @@
-2.8.5 / 2019-10-11
+2.8.6 / 2019-10-11
 ==================
 
 Unofficial fork of [Koa 2.8.2](https://github.com/koajs/koa) that is much smaller and lighter on dependancies:
