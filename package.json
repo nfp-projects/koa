@@ -26,7 +26,6 @@
     "debug-ms": "~4.1.2",
     "fresh": "~0.5.2",
     "http-errors-lite": "^2.0.2",
-    "koa-compose": "^4.1.0",
     "type-is": "^1.6.16"
   },
   "devDependencies": {
