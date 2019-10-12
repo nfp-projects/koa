@@ -1,3 +1,8 @@
+2.8.7 / 2019-10-11
+==================
+
+Re-implemented accepts, acceptsEncoding, acceptsLanguage and etc.
+
 2.8.6 / 2019-10-11
 ==================
 
