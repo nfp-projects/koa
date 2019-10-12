@@ -1,6 +1,6 @@
 {
   "name": "koa-lite",
-  "version": "2.8.7",
+  "version": "2.8.8",
   "description": "Lite version of the Koa web app framework",
   "main": "lib/application.js",
   "scripts": {
