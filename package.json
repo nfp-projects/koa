@@ -23,7 +23,7 @@
   "license": "MIT",
   "dependencies": {
     "content-disposition": "jharrilim/content-disposition#572383f",
-    "debug": "~4.1.2",
+    "debug-ms": "~4.1.2",
     "fresh": "~0.5.2",
     "http-errors-lite": "^2.0.2"
   },
